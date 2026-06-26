@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+   
 </head>
 <body>
     <header>
@@ -64,21 +64,21 @@
     <div class="contact-form-section">
         <h2>Send Us A Message</h2>
 
-        <form class="contact-form" id="contactForm">
+        <form id="contactForm" class="contact-form">
 
-            <input type="text" placeholder="Full Name" required>
+    <input type="text" id="name" placeholder="Full Name" required>
 
-            <input type="email" placeholder="Email Address" required>
+    <input type="email" id="email" placeholder="Email Address" required>
 
-            <input type="tel" placeholder="Phone Number" id="phone">
+    <input type="tel" id="phone" placeholder="Phone Number" required>
 
-            <textarea placeholder="How can we help you?" rows="6" required></textarea>
+    <textarea placeholder="How can we help you?" rows="6" required></textarea>
 
-            <button type="submit">Send Message</button>
+    <button type="submit">Send Message</button>
 
-        </form>
+</form>
     </div>
-
+        <script src="script.js"></script>
 </div>
 
 <div class="map-section">
