@@ -1,3 +1,4 @@
+/* HOME PAGE PLUS FOOTER AND HEADER*/
 * {
     margin: 0;
     padding: 0;
@@ -293,7 +294,141 @@ footer {
         flex-direction: column;
     }
 
-    .contact-hero h1 {
+    .contact h1 {
         font-size: 2.2rem;
+    }
+}
+
+/* ABOUT PAGE */
+
+.about-text {
+    padding: 140px 20px 80px;
+    text-align: center;
+    color: white;
+
+    background: linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url("driving-school.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.about-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.3rem;
+}
+
+.about-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 320px;
+}
+
+.about-text h2 {
+    color: #0078d7;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 320px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.why-us {
+    background: #f5f7fa;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.why-us h2 {
+    margin-bottom: 50px;
+    color: #0078d7;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-card {
+    width: 260px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-card h3 {
+    color: #0078d7;
+    margin-bottom: 15px;
+}
+
+.instructors {
+    width: 90%;
+    max-width: 900px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.instructors h2 {
+    color: #0078d7;
+    margin-bottom: 20px;
+}
+
+.instructors p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .about-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
     }
 }
