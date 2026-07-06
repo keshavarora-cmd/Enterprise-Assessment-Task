@@ -1,4 +1,4 @@
-/* HOME PAGE PLUS FOOTER AND HEADER*/
+
 * {
     margin: 0;
     padding: 0;
@@ -8,44 +8,87 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f7fa;
+    padding-top: px;
+
 }
 
 
 header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 1000;
 }
+
 .tab {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 10px;
+
     width: 100%;
-    padding: 15px 30px;
-    background: rgba(255, 255, 255, 0.25);
+    min-height: 80px;
+
+    padding: 0 40px 0 140px;
+
+    background: rgba(255,255,255,0.25);
     backdrop-filter: blur(12px);
-    position: absolute;
-    top: 0;
-    z-index: 2;
+    -webkit-backdrop-filter: blur(12px);
 }
 
+
+.logo {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+    display: block;
+}
+
+/* Navigation Links */
 
 .heading {
     text-decoration: none;
     color: black;
-    padding: 12px 20px;
-    margin-left: 10px;
-    border-radius: 10px;
-    transition: 0.3s ease;
     font-weight: bold;
+
+    padding: 12px 18px;
+    border-radius: 10px;
+
+    transition: .3s;
+    white-space: nowrap;
 }
 
 .heading:hover {
-    background-color: rgba(255, 228, 196, 0.9);
-    transform: translateY(-2px);
+    background: rgba(255,228,196,.9);
 }
 
 .active {
-    background-color: blanchedalmond;
+    background: blanchedalmond;
+}
+@media (max-width:600px){
+
+    .logo img{
+        width:60px;
+    }
+
+    .heading{
+        width:45%;
+        text-align:center;
+        padding:12px;
+        font-size:.9rem;
+    }
+
+    .tab{
+        gap:8px;
+    }
+
 }
 
 
@@ -168,6 +211,22 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+}
+@media (max-width: 900px){
+
+    .tab{
+        justify-content: center;
+        flex-wrap: wrap;
+
+        padding: 90px 15px 20px;
+    }
+
+    .logo{
+        left:50%;
+        top:20px;
+        transform:translateX(-50%);
+    }
+
 }
 
 /* CONTACT PAGE */
@@ -431,4 +490,97 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* FAQ */
+
+.faq {
+    padding: 140px 20px 80px;
+    text-align: center;
+    color: white;
+
+    background: linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url("driving-school.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.faq h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.faq p {
+    font-size: 1.2rem;
+}
+
+
+.faq-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 70px auto;
+}
+
+.faq-item {
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 20px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0078d7;
+    transition: .3s;
+    position: relative;
+}
+
+.faq-item summary:hover {
+    background: #f5f7fa;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 25px;
+    font-size: 1.5rem;
+    transition: .3s;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item p {
+    padding: 0 25px 20px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .faq-hero h1{
+        font-size:2.5rem;
+    }
+
+    .faq-item summary{
+        font-size:1rem;
+        padding:18px;
+    }
+
 }
