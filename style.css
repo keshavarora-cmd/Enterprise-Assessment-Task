@@ -213,7 +213,6 @@ footer {
     }
 }
 @media (max-width: 900px){
-
     .tab{
         justify-content: center;
         flex-wrap: wrap;
@@ -346,7 +345,6 @@ footer {
     color: #666;
 }
 
-/* Mobile */
 
 @media (max-width: 768px) {
     .contact-container {
@@ -355,6 +353,7 @@ footer {
 
     .contact h1 {
         font-size: 2.2rem;
+        margin-top: 8.5rem;
     }
 }
 
@@ -479,6 +478,7 @@ footer {
 
     .about-text h1 {
         font-size: 2.4rem;
+        margin-top: 8.5rem;
     }
 
     .about-section {
@@ -574,13 +574,140 @@ footer {
 
 @media (max-width:768px){
 
-    .faq-hero h1{
+    .faq h1{
         font-size:2.5rem;
+        margin-top: 8.5rem;
     }
 
     .faq-item summary{
         font-size:1rem;
         padding:18px;
+    }
+
+}
+
+
+/* REVIEWS HERO */
+
+.reviews {
+    padding: 140px 20px 80px;
+    text-align: center;
+    color: white;
+
+    background: linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url("driving-school.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.reviews h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.reviews p {
+    font-size: 1.2rem;
+}
+
+/* RATING */
+
+.rating-summary {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.rating-summary h2 {
+    color: #FFD700;
+    font-size: 3rem;
+}
+
+.rating-summary h3 {
+    color: #0078d7;
+    margin: 10px 0;
+}
+
+/* REVIEWS */
+
+.reviews-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    gap: 30px;
+    padding-bottom: 70px;
+}
+
+.review-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.review-card h3 {
+    color: #0078d7;
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    line-height: 1.7;
+}
+
+
+
+.review-cta {
+    background: #0078d7;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.review-cta h2 {
+    margin-bottom: 20px;
+}
+
+.review-cta p {
+    margin-bottom: 30px;
+}
+
+.review-cta .btn {
+    background: white;
+    color: #0078d7;
+    font-weight: bold;
+}
+
+.review-cta .btn:hover {
+    background: #f1f1f1;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .reviews h1{
+        font-size:2.5rem;
+        margin-top: 8.5rem;
+    }
+
+    .rating-summary h2{
+        font-size:2.2rem;
     }
 
 }
