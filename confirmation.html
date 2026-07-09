@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
 </head>
 <body>
-    <header>
+     <header>
 
     <div class="logo">
         <a href="index.html">
@@ -28,55 +27,44 @@
   
 
 </header>
-
-    <div class="booking">
-    <h1>Book Your Driving Lesson</h1>
-    <p>Complete the form below to reserve your lesson.</p>
+    <div class="confirmation">
+    <h1>Booking Confirmed!</h1>
+    <p>Your driving lesson has been successfully booked.</p>
 </div>
 
-<div class="booking-container">
+<div class="confirmation-section">
 
-    <form class="booking-form" id="bookingForm" action="confirmation.html">
+    <div class="confirmation-card">
 
-        <h2>Your Details</h2>
+        <div class="checkmark">
+            ✓
+        </div>
 
-        <label>Full Name</label>
-        <input type="text" required>
+        <h2>Thank You!</h2>
 
-        <label>Email Address</label>
-        <input type="email" required>
+        <p class="confirmation-message">
+            Your booking has been successfully received.
+        </p>
 
-        <label>Phone Number</label>
-        <input type="tel" id="phone" required>
+        <p class="confirmation-text">
+            Thank you for choosing <strong>Hazary Driving School</strong>.
+            We look forward to helping you become a safe and confident driver.
+        </p>
 
-        <label>Preferred Lesson Date</label>
-        <input type="date" required>
+        <p class="confirmation-text">
+            One of our instructors will contact you shortly to confirm your lesson
+            details and answer any questions you may have.
+        </p>
 
-        <label>Preferred Time</label>
-        <input type="time" required>
+        <div class="confirmation-buttons">
+            <a href="index.html" class="btn">Return Home</a>
+            <a href="contactUs.html" class="btn secondary-btn">Contact Us</a>
+        </div>
 
-        <label>Car Type</label>
-        <select required>
-            <option value="">Choose a vehicle...</option>
-            <option>Automatic</option>
-            <option>Manual</option>
-        </select>
-
-        <label>Pickup Location</label>
-        <input type="text" placeholder="Enter suburb or address" required>
-
-        <label>Additional Notes</label>
-        <textarea rows="5" placeholder="Anything you'd like your instructor to know?"></textarea>
-
-        <button class="btn" type="submit">
-            Confirm Booking
-        </button>
-
-    </form>
+    </div>
 
 </div>
-<script src="booking-form.js"></script>
-   <footer>
+<footer>
     <div class="footer-container">
 
         <div class="footer-section">
