@@ -36,46 +36,8 @@ header {
     backdrop-filter: blur(12px);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f7fa;
-    padding-top: px;
-
-}
 
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.tab {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-
-    width: 100%;
-    min-height: 80px;
-
-    padding: 0 40px 0 140px;
-
-    background: rgba(255,255,255,0.25);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-}
-
-
-/* Navigation Links */
 
 .heading {
     text-decoration: none;
@@ -127,6 +89,7 @@ header {
     height: auto;
 }
 
+/*Home Page */
 .homePic {
     width: 100%;
     height: 85vh;
@@ -169,7 +132,9 @@ header {
 .button:hover {
     background-color: #005ea8;
 }
-/*Footer */
+
+/*Footer*/
+
 footer {
     background: #1f2937;
     color: white;
@@ -229,7 +194,29 @@ footer {
 }
 
 
-/* CONTACT PAGE */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 900px){
+    .tab{
+        justify-content: center;
+        flex-wrap: wrap;
+
+        padding: 90px 15px 20px;
+    }
+
+    .logo{
+        left:50%;
+        top:20px;
+        transform:translateX(-50%);
+    }
+
+}
+
+/* Contact Page */
 
 .contact {
     padding-top: 120px;
@@ -362,7 +349,7 @@ footer {
     }
 }
 
-/* ABOUT PAGE */
+/* About Page */
 
 .about-text {
     padding: 140px 20px 80px;
@@ -399,17 +386,17 @@ footer {
     flex-wrap: wrap;
 }
 
-.about-text {
+.about-section {
     flex: 1;
     min-width: 320px;
 }
 
-.about-text h2 {
+.about-section h2 {
     color: #0078d7;
     margin-bottom: 20px;
 }
 
-.about-text p {
+.about-section p {
     line-height: 1.8;
     margin-bottom: 20px;
 }
@@ -497,7 +484,7 @@ footer {
     }
 }
 
-/* FAQ */
+/* FAQ Page */
 
 .faq {
     padding: 140px 20px 80px;
@@ -591,7 +578,7 @@ footer {
 }
 
 
-/* REVIEWS */
+/* Reviews Page */
 
 .reviews {
     padding: 140px 20px 80px;
@@ -714,7 +701,7 @@ footer {
 
 }
 
-/* Packages */
+/* Packages Page */
 .packages {
     padding: 140px 20px 80px;
     text-align: center;
@@ -896,7 +883,7 @@ footer {
 
 }
 
-/* Booking */
+/* Booking Page*/
 
 .booking{
     padding:140px 20px 80px;
@@ -1002,7 +989,7 @@ footer {
 
 @media(max-width:768px){
 
-    .booking-hero h1{
+    .booking h1{
         font-size:2.5rem;
         margin-top: 8.5rem;
     }
@@ -1014,7 +1001,7 @@ footer {
 }
 
 
-/* Confirmation */
+/* Confirmation Page*/
 
 .confirmation{
     padding: 140px 20px 80px;
