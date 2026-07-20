@@ -13,3 +13,8 @@ form.addEventListener("submit", function(event) {
 
 });
 
+const dateInput = document.getElementById('appointment');
+const today = new Date().toISOString().split('T')[0]; // Generates YYYY-MM-DD
+
+
+dateInput.setAttribute('min', today); 
