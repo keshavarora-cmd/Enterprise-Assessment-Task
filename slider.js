@@ -8,7 +8,7 @@ const prev = document.querySelector(".prev");
 
 let current = 0;
 
-
+//Check is slider has slides to show
 if (slider.length > 0) {
 
     function showSlide(index) {
@@ -25,7 +25,7 @@ if (slider.length > 0) {
         dots[index].classList.add("active");
 
     }
-
+    //Next slide 
     next.addEventListener("click", function () {
 
         current++;
@@ -37,7 +37,7 @@ if (slider.length > 0) {
         showSlide(current);
 
     });
-
+//Previous Slide
     prev.addEventListener("click", function () {
 
         current--;
@@ -49,7 +49,7 @@ if (slider.length > 0) {
         showSlide(current);
 
     });
-
+//Change Slide for individual dots
     dots.forEach((dot, index) => {
 
         dot.addEventListener("click", function () {
@@ -60,7 +60,7 @@ if (slider.length > 0) {
         });
 
     });
-
+//Change slide every 6 seconds
     setInterval(function () {
 
         current++;

@@ -37,7 +37,7 @@ header {
 
 
 
-
+/* Header*/
 .heading {
     text-decoration: none;
     color: black;
@@ -132,6 +132,12 @@ header {
     background-color: #005ea8;
 }
 
+@media (max-width: 768px) {
+    .homePic-text h1{
+    font-size: 3rem;;
+    margin-top: 8.5rem;
+    }
+}
 /*Footer*/
 
 footer {
@@ -174,15 +180,26 @@ footer {
     margin-bottom: 10px;
 }
 
-.footer-section a {
+.footer-section a, .footer-section i {
     color: #d1d5db;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.footer-section a:hover {
+.footer-section i {
+        font-size: 2rem;
+}
+
+.footer-section a:hover, .footer-section i:hover  {
     color: #60a5fa;
 }
+
+.follow {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+} 
 
 .footer-bottom {
     text-align: center;
@@ -194,6 +211,10 @@ footer {
 
 
 @media (max-width: 768px) {
+    .follow {
+        flex-direction: column;
+    }
+
     .footer-container {
         flex-direction: column;
         text-align: center;
@@ -218,18 +239,18 @@ footer {
 /* Contact Page */
 
 .contact {
-    padding-top: 120px;
-    padding-bottom: 60px;
+     padding: 140px 20px 80px;
     text-align: center;
+    color: white;
+
     background: linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
     ),
     url("driving-school.png");
 
     background-size: cover;
     background-position: center;
-    color: white;
 }
 
 .contact h1 {
@@ -343,7 +364,7 @@ footer {
     }
 
     .contact h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         margin-top: 8.5rem;
     }
 }
@@ -866,7 +887,7 @@ footer {
 }
 
 
-@media(max-width:900px){
+@media(max-width:768px){
 
     .slider-section{
 
@@ -896,8 +917,8 @@ footer {
     }
 
     .reviews h1{
-
-        font-size:2.3rem;
+    font-size:2.5rem;
+        margin-top: 8.5rem;
 
     }
 
